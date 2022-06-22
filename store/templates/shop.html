@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products Page</title>
+</head>
+<body>
+    <h1>Products list</h1>
+
+    <ul>
+    {% for product in products %}
+        <li>{{ product.id }} || {{ product.customer.first_name }}</li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>
